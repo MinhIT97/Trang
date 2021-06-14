@@ -15,7 +15,6 @@ class PermissionMiddleware
             : explode('|', $permission);
 
         $admin = \Auth::guard('admins')->user();
-
         foreach ($permissions as $permission) {
             if($admin->can($permission)) return $next($request);
         }

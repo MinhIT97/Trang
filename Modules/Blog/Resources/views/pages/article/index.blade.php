@@ -9,7 +9,7 @@
                 <div class="content-article mt20">
                     <h1 class="heading-h1">{{ $article->a_name }}</h1>
                     <div class="info-auth flex flex-jc-sb">
-                        <p>By <b>TrungPhuNA</b></p>
+                        <p>By <b>HuuTrang</b></p>
                         @if(isset($article->menu))
                             <p class="info-by-category">
                                 <a href="{{ route('get_blog.render',['slug' => $article->menu->m_slug.'-m']) }}" title="{{ $article->menu->m_name }}">{{ $article->menu->m_name }}</a>

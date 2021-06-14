@@ -14,7 +14,7 @@
                     </p>
                     <p class="item-contact">
                         <span>Email</span>
-                        <a href="">{{ $configuration->email ?? 'phupt.humg.94@gmail.com' }}</a>
+                        <a href="">{{ $configuration->email ?? 'nguyentrang97bn@gmail.com' }}</a>
                     </p>
                 </div>
                 <div class="item-4 item">
@@ -39,9 +39,8 @@
         </div>
     </div>
     <div class="footer-button">
-        <span>Copyright © 2020 <a href="">Admin</a>. Designed by <a href="https://www.facebook.com/TrungPhuNA/">TrungPhuNA</a> </span>
-        <p>Bạn nào muốn thuê code liên hệ với mình qua facebook <a href="https://www.facebook.com/TrungPhuNA/" target="_blank">tại đây</a> hoạc xem danh sách đồ án có sẵn
-            <a href="https://previewcode.net/source-code.html" target="_blank">tại đây</a></p>
+        <span>Copyright © 2020 <a href="">Admin</a>. Designed by <a href="https://www.facebook.com/nguyenhuu.trang.54/">HuuTrang</a> </span>
+
         <div class="container">{!! nl2br($configuration->footer_bottom ?? '') !!}</div>
     </div>
 </footer>

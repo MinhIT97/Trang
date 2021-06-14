@@ -3,6 +3,7 @@
     <div class="right-content">
         @include('pages.components.auth.include._inc_social')
         <p class="mb10">- Hoặc đăng nhập bằng tài khoản Kyna -</p>
+
         <form action="{{ route('get.login') }}" method="POST" id="formLogin">
             @csrf
             <div class="form-group">

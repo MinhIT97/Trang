@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Log;
 
 class LoginController extends Controller
 {
-    public function index(LoginRequest  $request)
+    public function index(LoginRequest $request)
     {
         if($request->ajax())
         {

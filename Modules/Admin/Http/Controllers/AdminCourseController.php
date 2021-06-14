@@ -48,10 +48,12 @@ class AdminCourseController extends AdminController
 
     public function store(AdminCourseRequest $request)
     {
+
         $data                 = $request->except(['avatar', 'save', '_token', 'tags']);
         $data['c_position_1'] = 0;
         $data['c_price']      = str_replace(',', '', $request->c_price);
         $data['created_at']   = Carbon::now();
+        $data['c_total_time']   = (int) $data['c_total_time'] /1000;
 
         if (!$request->c_title_seo) $data['c_title_seo'] = $request->c_name;
         if (!$request->c_description_seo) $data['c_description_seo'] = $request->c_name;

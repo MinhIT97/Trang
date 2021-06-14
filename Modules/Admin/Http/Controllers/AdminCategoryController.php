@@ -19,6 +19,7 @@ class AdminCategoryController extends AdminController
         $viewData = [
             'categories' => $categories
         ];
+
         return view('admin::pages.category.index', $viewData);
     }
 

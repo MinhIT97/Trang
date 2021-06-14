@@ -17,9 +17,9 @@ class DatabaseSeeder extends Seeder
     {
         try{
             \DB::table('admins')->insert([
-                'name' => 'TrungPhuNA',
-                'email' => 'phupt.humg.94@gmail.com',
-                'phone' => '0986420994',
+                'name' => 'HuuTrang',
+                'email' => 'nguyentrang97bn@gmail.com',
+                'phone' => '0978011997',
                 'password' => \Hash::make('123456789')
             ]);
         }catch (\Exception $exception){
@@ -28,9 +28,9 @@ class DatabaseSeeder extends Seeder
 
         try{
             \DB::table('users')->insert([
-                'name' => 'TrungPhuNA',
-                'email' => 'phupt.humg.94@gmail.com',
-//                'phone' => '0986420994',
+                'name' => 'HuuTrang',
+                'email' => 'nguyentrang97bn@gmail.com',
+//                'phone' => '0978011997',
                 'password' => \Hash::make('123456789')
             ]);
         }catch (\Exception $exception){

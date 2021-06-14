@@ -23,9 +23,15 @@
                 <div class="banner_top">
                     <div class="lists js-banner owl-carousel owl-theme">
                         @foreach($slides ?? [] as $item)
-                            <a href="{{ $item->s_link }}">
-                                <img src="{{ pare_url_file($item->s_banner) }}" alt="{{ $item->s_name }}">
-                            </a>
+                            @if($item->s_link == null)
+                                <a href="{{ $item->s_link }}">
+                                    <img src="{{ pare_url_file($item->s_banner) }}" alt="{{ $item->s_name }}">
+                                </a>
+                            @else
+                                <a href>
+                                    <img src="{{ $item->s_link }}" alt="{{ $item->s_name }}">
+                                </a>
+                            @endif
                         @endforeach
                     </div>
                 </div>
@@ -34,7 +40,7 @@
                         @for ($i = 1 ;$i <= 3 ; $i ++)
                             <div class="item item-3">
                                 <a href="">
-                                    <img src="https://media-kyna.cdn.vccloud.vn/uploads/banners/906/img/mobile_image_url-1600328736.jpg" alt="">
+                                    <img src="https://media-kyna.cdn.vccloud.vn/uploads/banners/904/img/mobile_image_url-1599710668.jpg" alt="">
                                 </a>
                             </div>
                         @endfor
