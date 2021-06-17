@@ -81,16 +81,16 @@ return [
             'type' => '1',
             'class' => ''
         ],
-        [
-            'name' => 'MOMO',
-            'type' => '2',
-            'class' => ''
-        ],
-        [
-            'name' => 'Thẻ Visa/  Mastercard',
-            'type' => '3',
-            'class' => ''
-        ],
+        // [
+        //     'name' => 'MOMO',
+        //     'type' => '2',
+        //     'class' => ''
+        // ],
+        // [
+        //     'name' => 'Thẻ Visa/  Mastercard',
+        //     'type' => '3',
+        //     'class' => ''
+        // ],
         [
             'name' => 'Thanh toán tại cửa hàng',
             'type' => '4',

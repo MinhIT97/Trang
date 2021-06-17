@@ -2,11 +2,6 @@
 return [
     'sidebar' => [
         [
-            'name' => 'Tổng quan',
-            'route' => 'get_admin.dashboard',
-            'class-icon' => 'la la-tachometer-alt'
-        ],
-        [
             'name' => 'Khoá học',
             'class-icon' => 'la la-book-open',
             'sub' => [

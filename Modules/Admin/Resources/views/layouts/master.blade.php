@@ -29,7 +29,7 @@
 <!-- Start Switcher -->
 <div class="switcher-wrapper ">
     <div class="demo_changer">
-        <div class="demo-icon bg_dark"><i class="fa fa-cog fa-spin  text_primary"></i></div>
+
         <div class="form_holder sidebar-right1">
             <div class="row">
                 <div class="swichermainleft border-bottom  text-center">

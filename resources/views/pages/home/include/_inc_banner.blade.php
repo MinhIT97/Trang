@@ -23,19 +23,15 @@
                 <div class="banner_top">
                     <div class="lists js-banner owl-carousel owl-theme">
                         @foreach($slides ?? [] as $item)
-                            @if($item->s_link == null)
+
                                 <a href="{{ $item->s_link }}">
-                                    <img src="{{ pare_url_file($item->s_banner) }}" alt="{{ $item->s_name }}">
+                                    <img src="{{ ($item->s_banner) }}" alt="{{ $item->s_name }}">
                                 </a>
-                            @else
-                                <a href>
-                                    <img src="{{ $item->s_link }}" alt="{{ $item->s_name }}">
-                                </a>
-                            @endif
+
                         @endforeach
                     </div>
                 </div>
-                <div class="banner_bottom">
+                <!-- <div class="banner_bottom">
                     <div class="lists">
                         @for ($i = 1 ;$i <= 3 ; $i ++)
                             <div class="item item-3">
@@ -45,7 +41,7 @@
                             </div>
                         @endfor
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>

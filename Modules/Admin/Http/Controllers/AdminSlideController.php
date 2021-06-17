@@ -29,6 +29,8 @@ class AdminSlideController extends AdminController
 
     public function store(AdminSlideRequest $request)
     {
+
+
         $data = $request->except(['avatar','save','_token']);
         $data['created_at'] = Carbon::now();
 
@@ -51,7 +53,26 @@ class AdminSlideController extends AdminController
 
     public function update(AdminSlideRequest $request, $id)
     {
+
+        $image =$request->file('s_banner');
         $data = $request->except(['avatar','save','_token']);
+
+
+        if($request->s_banner)
+        {
+            $domain = config('app.url');
+            $link   = $domain . '/uploads/' . $image->getClientOriginalName();
+
+            if (!is_null($image)) {
+                $image->move(base_path('/public/uploads'), $link);
+            }
+        }else
+        {
+            $link = $request->s_banners;
+        }
+
+
+        $data['s_banner'] = $link;
         $data['updated_at'] = Carbon::now();
         $slide = Slide::findOrFail($id);
 

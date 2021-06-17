@@ -46,7 +46,7 @@
                                         </td>
                                         <td>
                                             <a href="{{ $item->s_link }}" target="_blank" style="width: 200px;height: 100px;display: inline-block">
-                                                <img style="height: 100%;border-radius: 10px;border: 1px solid #dedede;width: 100%" src="{{ pare_url_file($item->s_banner) }}" alt="">
+                                                <img style="height: 100%;border-radius: 10px;border: 1px solid #dedede;width: 100%" src="{{ $item->s_banner }}" alt="">
                                             </a>
                                         </td>
                                         <td>
